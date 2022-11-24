@@ -12,17 +12,14 @@ public class MyForEach extends SimpleTagSupport {
 	private int end;
 	private int step;
 
-
 	public void setBegin(int begin) {
 		this.begin = begin;
 	}
-
 
 	public void setEnd(int end) {
 		this.end = end;
 	}
 
-	
 	public void setStep(int step) {
 		this.step = step;
 	}
@@ -31,12 +28,11 @@ public class MyForEach extends SimpleTagSupport {
 	public void doTag() throws JspException, IOException {
 
 		JspWriter out = getJspContext().getOut();
-		
-			for(int i = begin ; i <= end; i+=step) {
-				
-				out.println(i+"<br>");
-			}
 
+		for (int i = begin; i <= end; i += step) {
+
+			out.println(i + "<br>");
+		}
 
 	}
 

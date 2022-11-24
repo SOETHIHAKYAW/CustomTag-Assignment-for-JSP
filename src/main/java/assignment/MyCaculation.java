@@ -26,30 +26,30 @@ public class MyCaculation extends SimpleTagSupport {
 
 	@Override
 	public void doTag() throws JspException, IOException {
-		
-		JspWriter out = getJspContext().getOut();
-		
-			switch (opt) {
-			case "+":
-				out.println(num1+" + "+num2+" = "+(num1+num2));
-				break;
-			case "-":
-				out.println(num1+" - "+num2+" = "+(num1-num2));
-				break;
-			case "*":
-				out.println(num1+"*"+num2+"="+(num1*num2));
-				break;
-			case "/":
-				out.println(num1+"/"+num2+"="+(num1/num2));
-				break;
-			case "%":
-				out.println(num1+"%"+num2+"="+(num1%num2));
-				break;
 
-			default:
-				break;
-			}
-			
+		JspWriter out = getJspContext().getOut();
+
+		switch (opt) {
+		case "+":
+			out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+			break;
+		case "-":
+			out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+			break;
+		case "*":
+			out.println(num1 + "*" + num2 + "=" + (num1 * num2));
+			break;
+		case "/":
+			out.println(num1 + "/" + num2 + "=" + (num1 / num2));
+			break;
+		case "%":
+			out.println(num1 + "%" + num2 + "=" + (num1 % num2));
+			break;
+
+		default:
+			out.println("Invalid!Plase Try Again....");
+			break;
+		}
 
 	}
 
