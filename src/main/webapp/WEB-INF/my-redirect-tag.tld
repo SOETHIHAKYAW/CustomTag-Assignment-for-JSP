@@ -1,0 +1,25 @@
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>3.0</jsp-version>
+	<short-name>MyRedirect Tag</short-name>
+
+	<tag>
+	    <name>myRedirect</name>
+	    <tag-class>assignment.MyRedirectTag</tag-class>
+	    <body-content>scriptless</body-content>
+	    
+	    <attribute>
+	        <name>url</name>
+	        <required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    
+	    <attribute>    
+	        <name>context</name>
+	        <required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+  	</tag>
+  
+  </taglib>

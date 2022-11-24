@@ -1,0 +1,29 @@
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>3.0</jsp-version>
+	<short-name>MyCaculation Tag</short-name>
+	
+	<tag>	
+		<name>mycaculation</name>
+		<tag-class>assignment.MyCaculation</tag-class>
+		<body-content>scriptless</body-content>	
+		
+		<attribute>
+			<name>num1</name>
+			<required>true</required>
+		</attribute>
+		
+		<attribute>	
+			<name>num2</name>
+			<required>true</required>
+		</attribute>
+		
+		<attribute>		
+			<name>opt</name>
+			<required>true</required>
+		</attribute>
+		
+	</tag>
+
+</taglib>

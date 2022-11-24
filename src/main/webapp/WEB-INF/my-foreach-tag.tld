@@ -1,0 +1,29 @@
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>3.0</jsp-version>
+	<short-name>MyForeach Tag</short-name>
+	
+	<tag>	
+		<name>myforeach</name>
+		<tag-class>assignment.MyForEach</tag-class>
+		<body-content>scriptless</body-content>	
+		
+		<attribute>
+			<name>begin</name>
+			<required>true</required>
+		</attribute>
+		
+		<attribute>	
+			<name>end</name>
+			<required>true</required>
+		</attribute>
+		
+		<attribute>		
+			<name>step</name>
+			<required>true</required>
+		</attribute>
+		
+	</tag>
+
+</taglib>
